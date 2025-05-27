@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es" class="dark overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Currículum Vitae de Sebastián, Programador Full Stack.">
+    <title>Currículum Vitae - Sebastián</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Configuración de Tailwind para incluir el modo oscuro basado en la clase 'dark'
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        sky: {
+                            700: '#0369a1',
+                            600: '#0284c7',
+                            500: '#0ea5e9',
+                            400: '#38bdf8',
+                        },
+                        indigo: {
+                            500: '#6366f1',
+                        },
+                        gray: {
+                            900: '#111827',
+                            800: '#1f2937',
+                            700: '#374151',
+                            600: '#4b5563',
+                            300: '#d1d5db',
+                            200: '#e5e7eb',
+                            100: '#f3f4f6',
+                            50: '#f9fafb',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body
+    class="overflow-x-hidden bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500">
+
+    <header class="overflow-hidden bg-sky-700 dark:bg-gray-900 shadow-md dark:shadow-gray-800 py-6 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between md:items-center gap-6">
+            <div class="flex flex-col md:flex-row md:items-center md:gap-6 text-center md:text-left">
+                <img src="images/foto_cv2.jpg" alt="Sebastián"
+                    class="w-24 h-24 rounded-full shadow-md mx-auto md:mx-0">
+                <div class="mt-4 md:mt-0">
+                    <div class="flex items-center justify-center md:justify-start gap-3">
+                        <h1 class="text-3xl md:text-4xl font-bold text-white">Sebastián</h1>
+                        <button id="toggleDarkMode"
+                            class="p-2 cursor-pointer rounded-full border-none bg-transparent text-white dark:bg-gray-800 shadow-md dark:shadow-none text-gray-800 dark:text-gray-200 focus:outline-none transition"
+                            title="Cambiar modo oscuro">
+                            <i class="fas fa-adjust"></i>
+                        </button>
+                    </div>
+                    <h2 class="text-xl md:text-2xl text-gray-200">Programador Full Stack</h2>
+                </div>
+            </div>
+
+            <div class="text-gray-700 dark:text-gray-300 space-y-1 text-sm md:text-base text-center md:text-right">
+                <p class="text-gray-200"><strong class="text-white">Edad:</strong> 36 años</p>
+                <p class="text-gray-200"><strong class="text-white">Email:</strong> sebas.ase@gmail.com</p>
+                <p class="text-gray-200"><strong class="text-white">Ubicación:</strong> CABA, Argentina</p>
+                <p class="text-gray-200"><strong class="text-white">Url</strong> Mi cv</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade-up">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6" data-aos="fade-right" data-aos-delay="100">
+                <h3 class="text-2xl font-semibold mb-4">Habilidades</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div data-aos="fade-left" data-aos-delay="150">
+                        <span class="block font-medium">HTML</span>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-1">
+                            <div class="h-2 rounded-full bg-gradient-to-r from-sky-600 to-indigo-500 transition-all duration-1000" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="200">
+                        <span class="block font-medium">CSS</span>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-1">
+                            <div class="h-2 rounded-full bg-gradient-to-r from-sky-600 to-indigo-500 transition-all duration-1000" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="250">
+                        <span class="block font-medium">SCSS</span>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-1">
+                            <div class="h-2 rounded-full bg-gradient-to-r from-sky-600 to-indigo-500 transition-all duration-1000" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="300">
+                        <span class="block font-medium">JavaScript</span>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-1">
+                            <div class="h-2 rounded-full bg-gradient-to-r from-sky-600 to-indigo-500 transition-all duration-1000" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="350">
+                        <span class="block font-medium">jQuery</span>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-1">
+                            <div class="h-2 rounded-full bg-gradient-to-r from-sky-600 to-indigo-500 transition-all duration-1000" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="400">
+                        <span class="block font-medium">Bootstrap</span>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-1">
+                            <div class="h-2 rounded-full bg-gradient-to-r from-sky-600 to-indigo-500 transition-all duration-1000" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="450">
+                        <span class="block font-medium">Tailwind</span>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-1">
+                            <div class="h-2 rounded-full bg-gradient-to-r from-sky-600 to-indigo-500 transition-all duration-1000" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="500">
+                        <span class="block font-medium">Fetch/Axios</span>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-1">
+                            <div class="h-2 rounded-full bg-gradient-to-r from-sky-600 to-indigo-500 transition-all duration-1000" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="550">
+                        <span class="block font-medium">VueJs</span>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-1">
+                            <div class="h-2 rounded-full bg-gradient-to-r from-sky-600 to-indigo-500 transition-all duration-1000" style="width: 35%"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="600">
+                        <span class="block font-medium">ReactJs</span>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-1">
+                            <div class="h-2 rounded-full bg-gradient-to-r from-sky-600 to-indigo-500 transition-all duration-1000" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="650">
+                        <span class="block font-medium">NodeJs</span>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-1">
+                            <div class="h-2 rounded-full bg-gradient-to-r from-sky-600 to-indigo-500 transition-all duration-1000" style="width: 20%"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="700">
+                        <span class="block font-medium">PHP</span>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-1">
+                            <div class="h-2 rounded-full bg-gradient-to-r from-sky-600 to-indigo-500 transition-all duration-1000" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="750">
+                        <span class="block font-medium">Laravel</span>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-1">
+                            <div class="h-2 rounded-full bg-gradient-to-r from-sky-600 to-indigo-500 transition-all duration-1000" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="800">
+                        <span class="block font-medium">MySQL</span>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-1">
+                            <div class="h-2 rounded-full bg-gradient-to-r from-sky-600 to-indigo-500 transition-all duration-1000" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="850">
+                        <span class="block font-medium">SQL</span>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-1">
+                            <div class="h-2 rounded-full bg-gradient-to-r from-sky-600 to-indigo-500 transition-all duration-1000" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="900">
+                        <span class="block font-medium">JSON</span>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-1">
+                            <div class="h-2 rounded-full bg-gradient-to-r from-sky-600 to-indigo-500 transition-all duration-1000" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="950">
+                        <span class="block font-medium">API RESTful</span>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-1">
+                            <div class="h-2 rounded-full bg-gradient-to-r from-sky-600 to-indigo-500 transition-all duration-1000" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="1000">
+                        <span class="block font-medium">GIT/REPOS</span>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-1">
+                            <div class="h-2 rounded-full bg-gradient-to-r from-sky-600 to-indigo-500 transition-all duration-1000" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="1050">
+                        <span class="block font-medium">OpenAI API</span>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-1">
+                            <div class="h-2 rounded-full bg-gradient-to-r from-sky-600 to-indigo-500 transition-all duration-1000" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6" data-aos="fade-left" data-aos-delay="200">
+                <h3 class="text-2xl font-semibold mb-4">Estadísticas</h3>
+                <div class="grid grid-cols-1 gap-8">
+                    <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                        <canvas id="proyectosCompletadosChart" class="w-full h-64"></canvas>
+                    </div>
+                    <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                        <canvas id="experienciaChart" class="w-full h-64"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-8 bg-white dark:bg-gray-900" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100">Algunos trabajos realizados</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a href="https://elagestion.com" target="_blank"
+                class="block w-full bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg p-6 transition-transform hover:scale-105"
+                data-aos="zoom-in" data-aos-delay="350">
+                <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-gray-100">Ela Gestion</h4>
+                <p class="text-sm text-sky-600 dark:text-sky-400 hover:underline break-all">https://elagestion.com</p>
+            </a>
+            <a href="https://www.jeepplan.com.ar/" target="_blank"
+                class="block w-full bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg p-6 transition-transform hover:scale-105"
+                data-aos="zoom-in" data-aos-delay="450">
+                <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-gray-100">Jeep Plan</h4>
+                <p class="text-sm text-sky-600 dark:text-sky-400 hover:underline break-all">https://www.jeepplan.com.ar/</p>
+            </a>
+            <a href="https://maniking.com.ar" target="_blank"
+                class="block w-full bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg p-6 transition-transform hover:scale-105"
+                data-aos="zoom-in" data-aos-delay="550">
+                <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-gray-100">Mani King</h4>
+                <p class="text-sm text-sky-600 dark:text-sky-400 hover:underline break-all">https://maniking.com.ar</p>
+            </a>
+            <a href="http://www.ovaregroup.com/" target="_blank"
+                class="block w-full bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg p-6 transition-transform hover:scale-105"
+                data-aos="zoom-in" data-aos-delay="650">
+                <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-gray-100">Ovare Group</h4>
+                <p class="text-sm text-sky-600 dark:text-sky-400 hover:underline break-all">http://www.ovaregroup.com/</p>
+            </a>
+            <a href="https://togetherwith.com" target="_blank"
+                class="block w-full bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg p-6 transition-transform hover:scale-105"
+                data-aos="zoom-in" data-aos-delay="750">
+                <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-gray-100">Together With</h4>
+                <p class="text-sm text-sky-600 dark:text-sky-400 hover:underline break-all">https://togetherwith.com</p>
+            </a>
+            <a href="https://adcucina.com" target="_blank"
+                class="block w-full bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg p-6 transition-transform hover:scale-105"
+                data-aos="zoom-in" data-aos-delay="850">
+                <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-gray-100">Ad Cucina</h4>
+                <p class="text-sm text-sky-600 dark:text-sky-400 hover:underline break-all">https://adcucina.com</p>
+            </a>
+            <a href="https://fedea.com.ar" target="_blank"
+                class="block w-full bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg p-6 transition-transform hover:scale-105"
+                data-aos="zoom-in" data-aos-delay="950">
+                <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-gray-100">Fedea</h4>
+                <p class="text-sm text-sky-600 dark:text-sky-400 hover:underline break-all">https://fedea.com.ar</p>
+            </a>
+            <a href="https://www.fiatplan.com.ar/" target="_blank"
+                class="block w-full bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg p-6 transition-transform hover:scale-105"
+                data-aos="zoom-in" data-aos-delay="1050">
+                <h4 class="text-lg font-bold mb-2 text-gray-900 dark:text-gray-100">Fiat Plan</h4>
+                <p class="text-sm text-sky-600 dark:text-sky-400 hover:underline break-all">https://www.fiatplan.com.ar/</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="p-8 bg-gray-50 dark:bg-gray-800" data-aos="fade-up" data-aos-delay="250">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6" data-aos="fade-right" data-aos-delay="300">
+                <h4 class="text-2xl font-semibold mb-4">Educación Relevante</h4>
+                <div class="space-y-6 border-l-4 border-sky-500 pl-4">
+                    <div>
+                        <h5 class="text-lg font-bold">Digital House One</h5>
+                        <span class="text-sm text-gray-600 dark:text-gray-400">2024 - 2025</span>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Cursos varios para actualizar conocimientos.</p>
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-bold">Udemy</h5>
+                        <span class="text-sm text-gray-600 dark:text-gray-400">2019</span>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Cursos: React, Vue, Node, IA</p>
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-bold">Platzi</h5>
+                        <span class="text-sm text-gray-600 dark:text-gray-400">2019</span>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Cursos: React, Vue, Node, IA</p>
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-bold">Educación IT</h5>
+                        <span class="text-sm text-gray-600 dark:text-gray-400">2019</span>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Cursos: Blockchain y Criptomonedas. React, Mongo Devops.</p>
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-bold">Digital House</h5>
+                        <span class="text-sm text-gray-600 dark:text-gray-400">2017</span>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Desarrollador Web Full Stack | Html, scss, javascript,
+                            jquery, php, laravel, mysql, api, sql</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6" data-aos="fade-left" data-aos-delay="350">
+                <h4 class="text-2xl font-semibold mb-4">Ultimas Experiencias</h4>
+                <div class="space-y-6 border-l-4 border-indigo-500 pl-4">
+                    <div>
+                        <h5 class="text-lg font-bold">Together With</h5>
+                        <span class="text-sm text-gray-600 dark:text-gray-400">Julio 2020 | Actualidad</span>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Desarrollador web full stack y Lider técnico</p>
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-bold">Jornal Salud</h5>
+                        <span class="text-sm text-gray-600 dark:text-gray-400">Julio 2020 | Actualidad</span>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Desarrollador web full stack y Lider técnico.</p>
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-bold">Educar S.E.</h5>
+                        <span class="text-sm text-gray-600 dark:text-gray-400">Nov 2018 - Mar 2020</span>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Desarrollador web full stack</p>
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-bold">Ivess</h5>
+                        <span class="text-sm text-gray-600 dark:text-gray-400">May 2018 - Sep 2018</span>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Desarrollador web full stack y Diseñador
+                            multimedia</p>
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-bold">Evolucion Aurea y Laydeon TV Online</h5>
+                        <span class="text-sm text-gray-600 dark:text-gray-400">Ene 2011 - May 2018</span>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Founder - Diseñador Multimedia - Desarrollador web</p>
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-bold">Educación IT</h5>
+                        <span class="text-sm text-gray-600 dark:text-gray-400">Nov 2013 - May 2017</span>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Docente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-8 grid grid-cols-1 md:grid-cols-2 gap-8 bg-gray-100 dark:bg-gray-700 shadow-lg rounded-lg"
+        data-aos="fade-up" data-aos-delay="400">
+        <div class="bg-sky-600 text-white rounded-lg p-6 flex items-center justify-center">
+            <i class="fas fa-paper-plane text-2xl mr-3"></i>
+            <span class="font-medium">¿Interesado en trabajar juntos? ¡Contáctame!</span>
+        </div>
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 space-y-3">
+            <a href="mailto:sebas.ase@gmail.com" class="flex items-center hover:text-sky-600 transition"><i
+                    class="fas fa-envelope mr-2"></i>Email</a>
+            <a href="https://www.miweb.com" target="_blank" class="flex items-center hover:text-sky-600 transition"><i
+                    class="fas fa-globe mr-2"></i>Web</a>
+            <a href="https://www.linkedin.com/in/sebastian-s-93834426/" target="_blank"
+                class="flex items-center hover:text-sky-600 transition"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/chart.umd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800 });
+    </script>
+    <script>
+        // Contenido de estadisticas.js incrustado directamente
+        document.addEventListener('DOMContentLoaded', () => {
+            // Funciones de color
+            const getLabelColor = () =>
+                document.documentElement.classList.contains('dark') ? '#E5E7EB' : '#1F2937';
+            const getGridColor = () =>
+                document.documentElement.classList.contains('dark') ?
+                'rgba(229,231,235,0.2)' :
+                'rgba(31,41,55,0.1)';
+
+            let proyectosChart, experienciaChart;
+
+            // ===== Bar chart: Proyectos por tecnología =====
+            const ctx1 = document.getElementById('proyectosCompletadosChart');
+            if (ctx1) {
+                proyectosChart = new Chart(ctx1, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Laravel', 'JavaScript', 'jQuery', 'React', 'Vue', 'Bootstrap', 'Tailwind', 'CSS/SCSS'],
+                        datasets: [{
+                            label: 'Proyectos por tecnología (%)',
+                            data: [100, 100, 80, 30, 10, 80, 50, 100],
+                            backgroundColor: '#6366F1'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        color: getLabelColor(),
+                        plugins: {
+                            legend: {
+                                labels: {
+                                    color: getLabelColor()
+                                }
+                            },
+                            tooltip: {
+                                titleColor: getLabelColor(),
+                                bodyColor: getLabelColor(),
+                                callbacks: {
+                                    label: ctx => `${ctx.parsed.y}%`
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                ticks: {
+                                    color: getLabelColor()
+                                },
+                                grid: {
+                                    color: getGridColor()
+                                }
+                            },
+                            y: {
+                                beginAtZero: true,
+                                max: 100,
+                                ticks: {
+                                    color: getLabelColor(),
+                                    callback: value => `${value}%`
+                                },
+                                grid: {
+                                    color: getGridColor()
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // ===== Doughnut chart: Experiencia =====
+            const ctx2 = document.getElementById('experienciaChart');
+            if (ctx2) {
+                experienciaChart = new Chart(ctx2, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Frontend', 'Backend', 'DevOps'],
+                        datasets: [{
+                            label: 'Años de experiencia',
+                            data: [4, 5, 1],
+                            backgroundColor: ['#3B82F6', '#10B981', '#F59E0B']
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        color: getLabelColor(),
+                        plugins: {
+                            legend: {
+                                labels: {
+                                    color: getLabelColor()
+                                }
+                            },
+                            tooltip: {
+                                titleColor: getLabelColor(),
+                                bodyColor: getLabelColor()
+                            }
+                        }
+                    }
+                });
+            }
+
+            // ===== Toggle Dark Mode y actualización de charts =====
+            const btn = document.getElementById('toggleDarkMode');
+            btn?.addEventListener('click', () => {
+                document.documentElement.classList.toggle('dark');
+                const labelColor = getLabelColor();
+                const gridColor = getGridColor();
+
+                if (proyectosChart) {
+                    proyectosChart.options.color = labelColor;
+                    proyectosChart.options.plugins.legend.labels.color = labelColor;
+                    proyectosChart.options.plugins.tooltip.titleColor = labelColor;
+                    proyectosChart.options.plugins.tooltip.bodyColor = labelColor;
+                    proyectosChart.options.scales.x.ticks.color = labelColor;
+                    proyectosChart.options.scales.x.grid.color = gridColor;
+                    proyectosChart.options.scales.y.ticks.color = labelColor;
+                    proyectosChart.options.scales.y.grid.color = gridColor;
+                    proyectosChart.update();
+                }
+
+                if (experienciaChart) {
+                    experienciaChart.options.color = labelColor;
+                    experienciaChart.options.plugins.legend.labels.color = labelColor;
+                    experienciaChart.options.plugins.tooltip.titleColor = labelColor;
+                    experienciaChart.options.plugins.tooltip.bodyColor = labelColor;
+                    experienciaChart.update();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
