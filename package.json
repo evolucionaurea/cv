@@ -1,0 +1,13 @@
+{
+  "name": "cv-sebastian-sanchez",
+  "private": true,
+  "description": "Web CV y generador del CV en PDF",
+  "scripts": {
+    "build:css": "tailwindcss -c tailwind.config.js -i css/tailwind.src.css -o css/tailwind.css --minify",
+    "build:cv": "node scripts/build-cv-pdf.mjs",
+    "build": "npm run build:css && npm run build:cv"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}
